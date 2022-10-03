@@ -1,0 +1,247 @@
+.home {
+    margin-top: 30%;
+    margin-bottom: 30%;
+}
+
+#title-landing {
+    color: #240D57;
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 41px;
+    text-align: center;
+
+
+}
+
+#snapchat {
+    background: linear-gradient(90deg, #8456EC 24.2%, #E87BF8 120.46%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.description {
+    height: 36px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+
+    color: #4F4F4F;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+#landing-image {
+    margin: 10px auto;
+    text-align: center;
+}
+
+#landing-image img {
+    width: 165px;
+}
+
+.button {
+    margin-top: 5%;
+    text-align: center;
+}
+
+#create {
+
+    width: 187px;
+    height: 50px;
+    left: calc(50% - 187px/2);
+    top: 616px;
+
+    background: linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%);
+    border-radius: 10px;
+    color: white;
+}
+
+
+
+.form {
+    text-align: center;
+    margin: auto;
+    margin-top: 20%;
+}
+
+input {
+    display: block;
+    padding: .5rem .8rem .5rem .8rem;
+    margin: .9vw 0;
+    border: 0;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.input-align {
+    justify-content: space-between;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 50px 150px;
+}
+
+#birthday {
+    /* position: absolute; */
+    width: 100%;
+    height: 375px;
+    border-radius: 0px;
+}
+
+#birthname {
+    position: absolute;
+    width: 327px;
+    height: 37px;
+    left: calc(50% - 327px/2 - 4px);
+    top: 386px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 32px;
+
+    color: #240D57;
+}
+
+#hostName {
+    position: absolute;
+    width: 341px;
+    height: 15px;
+    left: calc(50% - 341px/2 + 3px);
+    top: 427px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #828282;
+}
+
+#date {
+    /* display: flex; */
+    align-items: center;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: auto auto;
+    position: absolute;
+    width: 349.57px;
+    height: 64px;
+    left: calc(50% - 349.57px/2 - 0.72px);
+    top: 466px;
+
+    border-radius: 10px;
+}
+
+#icon {
+    /* Auto layout */
+
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+
+    width: 48px;
+    height: 48px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+#startDate {
+    width: 138px;
+    height: 18px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #240D57;
+
+
+    /* Inside auto layout */
+
+}
+
+#endDate {
+    width: 197px;
+    height: 16px;
+
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height */
+
+
+    color: #4F4F4F;
+
+
+    /* Inside auto layout */
+
+}
+
+#location {
+
+    /* Auto layout */
+    /* display: flex; */
+    align-items: center;
+    padding: 8px;
+    display: grid;
+    grid-template-columns: auto auto;
+    position: absolute;
+    width: 349.57px;
+    height: 64px;
+    left: calc(47% - 349.57px/2 - 0.72px);
+    top: 530px;
+    border-radius: 10px;
+}
+
+#locationIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    gap: 1px;
+
+    width: 48px;
+    height: 48px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}

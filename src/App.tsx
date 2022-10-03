@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import CreateEvent from "./features/create-event";
+import EventDetails from "./features/event-details";
+import Landing from "./features/landing";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const Test = () => {
+  console.log("RELEASE LCOAL QUERY");
+  return <></>;
+};
+const App = () => (
+  <>
+    <Test />
+    <Routes>
+      <Route path="/" element={<Landing></Landing>}></Route>
+      <Route path="/createEvent" element={<CreateEvent></CreateEvent>}></Route>
+      <Route
+        path="/eventDetails"
+        element={<EventDetails></EventDetails>}
+      ></Route>
+    </Routes>
+  </>
+);
 
 export default App;
