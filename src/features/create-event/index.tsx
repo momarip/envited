@@ -1,9 +1,11 @@
 import React, { FC, useState } from "react";
 import { useForm } from "react-cool-form";
+import { useNavigate } from "react-router-dom";
 
 interface CreateEventProps {}
 
 const CreateEvent: FC<CreateEventProps> = () => {
+  const navigate = useNavigate();
   let [eventName, setEventName] = useState("");
   let [hostName, setHostName] = useState("");
   let [startDate, setStartDate] = useState("");
@@ -99,10 +101,10 @@ const CreateEvent: FC<CreateEventProps> = () => {
             <button
               id="create"
               onClick={() => {
-                // navigate("/CreateEvent");
+                navigate("/eventDetails");
               }}
             >
-              Create my event
+              Next
             </button>
           </div>
         </div>
